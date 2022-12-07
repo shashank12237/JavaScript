@@ -1,0 +1,15 @@
+JavaScript is a lightweight, cross-platform, and interpreted compiled programming 
+language which is also known as the scripting language for webpages. 
+It is well-known for the development of web pages, many non-browser environments
+ also use it. JavaScript can be used for Client-side developments
+  as well as Server-side developments. Javascript is both imperative and 
+  declarative type of language. JavaScript contains a standard library of objects, 
+  like Array, Date, and Math, and a core set of language elements like operators, 
+  control structures, and statements. 
+  ***************************************************************
+Definition :CONSOLE.log()
+The console.log() is a function in JavaScript that is used to print any kind of variables defined before in it or to just print any message that needs to be displayed to the user.
+
+Syntax:
+
+console.log(" ");
