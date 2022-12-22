@@ -32,3 +32,4 @@ console.log(now.getTime())//gives present time
 
 console.log(now.getFullYear());//2022
 console.log(now.getMonth());//11==>means dec cz it starts from 0 i.e january
+console.log(now.getDay());
