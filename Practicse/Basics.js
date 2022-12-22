@@ -56,3 +56,14 @@ console.log(b);
 console.log("shashank \t kumar singh");// \t==> tab space
 console.log("shashank kumar \"Singh\" ");//shashank kumar "Singh"
 
+// variables name
+var $a=100;
+var _b=200;
+var c_1=300;
+var d_$121=400;
+var e=  $a+_b+c_1+d_$121;
+console.log(e);
+var radius=5.8;
+const pi=3.14;
+var area=2*pi*radius*radius;
+console.log(Math.round(area));//we have rounded of area by using math.round
