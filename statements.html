@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3> welcome to js</h3>
+  <div id="mydiv">
+    
+</div>
+
+<div id="mydiv2">
+    this is div2
+    <!-- will be overwrideen once we click the button -->
+    
+</div>
+<button type="button" onclick="func1()">clickme</button>
+<script>
+ //   1 semicolon
+    var a=10;
+    var b=20;
+    var c =a+b;
+    document.getElementById("mydiv").innerHTML="the value of c is :"+c;
+  //  2 codeblock
+function func1()
+{
+    var a=556;
+    var b=556;
+    var c=a*b;
+    var d=a+b;
+    document.getElementById("mydiv2").innerHTML="the calculated value of c is :"+c+" the value of d is "+d;
+// it overwrides the the value of c is:30 by func1()
+//so to avoid this we made another <div id="mydiv2"> 
+}
+</script>
+</body>
+</html>

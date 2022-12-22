@@ -8,8 +8,32 @@ It is well-known for the development of web pages, many non-browser environments
   control structures, and statements. 
   ***************************************************************
 Definition :CONSOLE.log()
-The console.log() is a function in JavaScript that is used to print any kind of variables defined before in it or to just print any message that needs to be displayed to the user.
+The console.log() is a function in JavaScript that is used to print any kind of 
+variables defined before in it or to just print any message that needs to be displayed 
+to the user.
 
 Syntax:
 
 console.log(" ");
+statements:
+1)Semicolons separate JavaScript statements.
+Semicolon marks the end of a statement in javascrip
+2)Multiple statements on one line are allowed if they are separated with a semicolon.
+a=2;b=3;z=a+b;
+3)Code Blocks:
+JavaScript statements can be grouped together inside curly brackets. 
+Such groups are known as code blocks. 
+The purpose of grouping is to define statements to be executed together.
+<script>
+        function myFunction() {
+            
+            document.getElementById(
+              "geek1").innerHTML = "Hello";
+            
+            document.getElementById(
+              "geek2").innerHTML = 
+              "How are you?";
+        }
+    </script>
+
+4)
