@@ -60,3 +60,18 @@ console.log(z);
 
 //toset year
 //setFullYear(2020)
+
+//cube of a number
+var num=4 ** 3;
+console.log(num);//64
+var num1=Math.pow(4,3);
+console.log(num1);//64
+var num2=4*4*4;//64
+console.log(num2);//64
+//post nd pre increment
+var num=5;
+var x=++num;
+console.log("x is "+x+" num is "+num);
+var num=5;
+var x=num++;//5 is assignd to num and then incremented
+console.log("x is "+x+" num is "+num);
