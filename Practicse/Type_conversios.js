@@ -30,3 +30,4 @@ let n3=parseInt("12237Sks");
 console.log(n3,typeof n3);//12237 number
 let n4=parseInt("Sks12237");
 console.log(n4,typeof n4);//NaN number==>it means we can only parse when starting charctrs r integers
+
