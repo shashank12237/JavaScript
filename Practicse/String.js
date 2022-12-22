@@ -17,3 +17,10 @@ var str= "I am known as Shashank";
 console.log("charctr is "+str.charAt(1),str.charAt(2));
 console.log(str[0]);//first charatr
 console.log(str[str.length-1]);//k==> last charactr
+/*
+Whenever you try to
+refer to a property of a string s, JavaScript converts the string value to an object as if by
+calling new String(s). This object inherits (see §6.2.2) string methods and is used to
+resolve the property reference. Once the property has been resolved, the newly created
+object is discarded. (
+*/
