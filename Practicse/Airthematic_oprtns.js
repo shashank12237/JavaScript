@@ -56,3 +56,7 @@ var f=new Date('7/11/2020')
 var e= new Date();
 var z=e.getDate()-f.getDate();
 console.log(z);
+
+
+//toset year
+//setFullYear(2020)
