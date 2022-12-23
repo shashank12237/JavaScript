@@ -15,10 +15,10 @@ console.log(string+string);//considering the latest assigned value of var string
 //the only thing it will consioder the latest one
 /*
 also we came to know that javascript too has datatypes
-Primitive types:
+Primitive types://they r not mutable(Immutable)
 1 string 2 number 3 boolean 4 null 5 undefined 6 bigint 7 Symbol
-Non primitive(Complex)typeof
-1 Object
+
+Non primitive(Complex)typeof==>1) Object 2) functions,3) array==>they r mutable
 */
 //Numbers
 var number1=100;
