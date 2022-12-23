@@ -32,7 +32,8 @@ console.log(airlines.arr_stn);
 
 // to update any particular property
 //suppose we have to update arrival_destintn
-airlines["arr_stn"]="pune";
+airlines["arr_stn"]="pune";//method 1
+//method 2: airlines.arr_stn="pune"
 console.log(airlines);
 
 // add a new key and value
@@ -46,4 +47,6 @@ console.log(x.time)//will print time
 
 //adding new key and values via ref
 x.fname="shashank";
+//updating value
+x.status="late";
 console.log(x);
