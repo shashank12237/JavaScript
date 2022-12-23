@@ -19,3 +19,9 @@ console.log(p.search("l"));//tells index of charactr if exist
 console.log(p.slice(0,3));
 console.log(p.replace('p',"$"));//will replace only first occurence of respectd word
 console.log(p.replaceAll('p',"$"));// replaceAll ==> will replace all the charctrs with given symbl
+
+let n1="3";
+let n2=3;
+console.log(n1==n2);//true=> cz both values r 3
+//type + value equality
+console.log(n1===n2);//false cz there values r same but types r diffrent
