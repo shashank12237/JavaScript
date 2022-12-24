@@ -37,3 +37,10 @@ console.log(" calling f1() ");
 f1();
 console.log(" calling copy f2() ");
 f2();
+//Expression functions
+/*
+
+*/
+//functions with arguments
+
+var x;
