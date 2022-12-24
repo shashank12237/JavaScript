@@ -37,10 +37,42 @@ console.log(" calling f1() ");
 f1();
 console.log(" calling copy f2() ");
 f2();
-//Expression functions
+
+//by telusko
+function greet1()
+{
+   // console.log(" karanchi se salam hai bhaijaan ");//line1
+   return " karanchi se salam hai bhaijaan ";
+   //we can have only one return statements
+}
+greet1();//line 1
+let str=greet1();
+console.log(str);
+//case:1
 /*
+function greet(user)
+{
+   
+   return " hello user ";//${user} dindnt work here
+  
+}
 
-*/
-//functions with arguments
+let user=" Bhaijaan ";
+let str1=greet(user);
+console.log(str1);//hello user
+ */
+//but we thought o/p is bhaijaan
+//reason: in greet() ==> return hello user ==> here it thinks
+//that this is normal string thats why we r getting "hello user"
+//not hello bhaijaan
+//Solutn:
+function greet(user)
+{
+   
+   return `Salam ${user} `  ;
+  
+}
+let user=' Bhaijaan' ;
+let str1=greet(user);
+console.log(str1);
 
-var x;
