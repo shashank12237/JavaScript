@@ -58,5 +58,8 @@ console.log(x);
 //if any property not exist then it will show error
 //to avoid this use "?" symbol
 console.log(airlines?.arrival1);//using "?"==> undefined
-
-
+//display only arrival details via for in loop
+for(key in airlines.arrival)
+{
+    console.log(key,x.arrival[key]);
+}
