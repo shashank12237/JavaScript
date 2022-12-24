@@ -30,7 +30,7 @@ user_name();
 console.log("*******************");
 function f1()
 {
-    console.log(" ok guys ");
+    console.log(" ok guys  ");
 }
 var f2=f1;// copy is created
 console.log(" calling f1() ");
