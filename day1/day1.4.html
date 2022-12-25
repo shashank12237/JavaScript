@@ -1,0 +1,58 @@
+<!--  calculator  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2> calci</h2>
+    <p> 1) + <br>2)- <br> 3)* <br> 4) / <br> 5)% <br> 6)^ <br></p>
+    <script>
+        var n1=parseFloat(prompt("Enter a num"));
+        var n2=parseFloat(prompt("Enter a num"));
+        var opr1=prompt("Enter the operator");
+        document.write("num1 is "+n1);
+        document.write("num2 is "+n2);
+        
+        document.write("u have choosen "+opr1);
+        switch(opr1)
+        {
+            case '+':
+                var res=n1+n2;
+                // document.getElementById("mydiv").innerHTML=res;
+                document.write(res);
+                break;
+            case '-':
+                var res=n1-n2;
+                // document.getElementById("mydiv").innerHTML=res;
+                document.write(res);
+                break;   
+            case '*':
+                var res=n1*n2;
+                // document.getElementById("mydiv").innerHTML=res;
+                document.write(res);
+                break;
+            case '/':
+                var res=n1/n2;
+                // document.getElementById("mydiv").innerHTML=res;
+                document.write(res);
+                break;
+            case '%':
+                var res=n1%n2;
+                // document.getElementById("mydiv").innerHTML=res;
+                document.write(res);
+                break;   
+            case '^':
+                var res=Math.pow(n1,n2);
+                // document.getElementById("mydiv").innerHTML=res;
+                document.write(res);
+                break;  
+
+        }
+    </script>
+    <div id="mydiv"> </div>
+</body>
+</html>
