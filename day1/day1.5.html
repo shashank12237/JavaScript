@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function mul()
+        {
+            var res=1;
+            for(i=1;i<arguments.length;i++)
+            {
+                res=res*arguments[i]; 
+           }
+           return res;
+        }
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p> arguments</p>
+    <script>
+        document.write("Product is : "+mul(10,20)+"<br>");
+        document.write("Product is : "+mul(10,20,66)+"<br>");
+        document.write("Product is : "+mul(10,20,89,80,19,193)+"<br>");
+    </script>
+</body>
+</html>
