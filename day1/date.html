@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+          var today =new Date();
+
+          document.write("Today is ");
+          switch(today.getDay())
+          {
+            
+            case 0:
+                var a=document.write("Sunday");
+            break;
+            case 1:var a=document.write("Monday");
+            break;
+            case 2:var a=document.write("Tueday");
+            break;
+            case 3:var a=document.write("Wednesday");
+            break;
+            case 4:var a=document.write("Thursday");
+            break;
+            case 5:var a=document.write("Friday");
+            break;
+            case 6:var a=document.write("Saturday");
+            break;
+          }
+        document.write(" "+today.getDate());
+          switch(today.getMonth())
+          {
+            case 0:var c=document.write(" January ");
+            break;
+            case 1:var c=document.write(" Febuary ");
+            break;
+            case 2:var c=document.write(" March ");
+            break;
+            case 3:var c=document.write(" April ");
+            break;
+            case 4:var c=document.write(" May ");
+            break;
+            case 5:var c=document.write(" June ");
+            break;
+            case 6:var c=document.write(" July ");
+            break;
+            case 7:var c=document.write(" August ");
+            break;
+            case 8:var c=document.write(" September ");
+            break;
+            case 9:var c=document.write(" October ");
+            break;
+            case 10:var c=document.write(" Noveber ");
+            break;
+            case 11:var c=document.write(" December ");
+            break;
+          }
+          document.write(" "+today.getFullYear());
+          if(today.getHours<=12)
+          {
+            var h="Morning";
+          }
+          else if(today.getHours>12 && today.getHours<16)
+          {
+            var h="Afternoon";
+          }
+          else if(today.getHours>16 && today.getHours<19)
+          {
+            var h="Good Evening";
+          }
+          else
+          {
+            var h="Good Night";
+          }
+          document.write(",Welcome and "+h+" to You");
+          var nod=
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  
+
+</body>
+</html>
