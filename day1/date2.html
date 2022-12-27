@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var d1=new Date();
+        // document.write(d1.getTime()+"<br>");//1672080752859
+        // document.write(d1.valueOf()+"<br>");//1672080752859
+        document.write(Date.now()+"<br>");//1672080752859
+        //1672080752859 ==> milisecs elapsd affter 1jan 1970
+        var d2=new Date();
+        document.write(d2+"<br>");
+        var d1=new Date(Date.now()+1000000);
+        document.write(d1.toString()+"<br>");
+        
+    </script>
+</body>
+</html>
