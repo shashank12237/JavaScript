@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+JavaScript provides methods:
+1) JSON.stringify to convert objects into JSON.
+2) JSON.parse to convert JSON back into an object.
+        */
+       var student={
+        name:"eklavya",
+        course:"Pg-Dac",
+        languages:"java,html,css,javascript",
+        rollno:29 
+       };
+       var json=JSON.stringify(student);
+       document.write(typeof json+"<br>");
+       document.write(json);
+       /*
+       ==>The method JSON.stringify(student) takes the object and converts it into a 
+       string
+      ==>The resulting json string is called a JSON-encoded or serialized or 
+      stringified or marshalled object. 
+      ==> We are ready to send it over the wire or put into a plain data store.
+
+      JSON.stringify can be applied to primitives as well.
+      IGNORED:
+      JSON is data-only language-independent specification, 
+      so some JavaScript-specific object properties are skipped by JSON.stringify.
+
+Namely:
+1>Function properties (methods).
+2>Symbolic keys and values.
+3>Properties that store undefined
+
+The full syntax of JSON.stringify is:
+
+let json = JSON.stringify(value[, replacer, space])
+1>value:
+A value to encode.
+2>replacer
+Array of properties to encode or a mapping function function(key, value).
+a> function replacer(key, value)
+b> ['title', 'participants', 'place', 'name', 'number']
+3>space
+Amount of space to use for formatting
+
+       */
+
+ //To decode a JSON-string, we need another method named JSON.parse.
+       
+/*
+The syntax:
+
+let value = JSON.parse(str, [reviver]);
+
+*/
+    </script>
+</body>
+</html>
