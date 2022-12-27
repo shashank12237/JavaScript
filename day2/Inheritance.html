@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <script>
+         class Emp{
+        constructor(id,name)
+        {
+            // we can have only one ctor in a class in js
+            //also the name of ctor should be constructor(Parameters(if exists))
+             this.id=id;
+            this.name=name;
+            }//ctor ends
+            //we cant use keyword function() in a class
+            //we define a func like belo
+            displayDetails()//only fun name
+            {
+                document.write("Id: "+this.id+" <br> "+" Name: "+this.name+"<br>");
+            }//fun ends 
+    }//emp ends
+    var e1=new Emp(101,"Anil");//creating user defind obj
+    var e2=new Emp(102,"Vaishu");
+    e1.displayDetails();//fun calling
+    e2.displayDetails();
+    document.write("************");
+   // document.write(e1.name);by help of e1 we r accesing its property==> Readable
+   document.write("<br>")
+    e2.name="Hitman==>Anil";//changing property in js==> Writable
+    e1.displayDetails();
+    e2.displayDetails();
+        class Sal extends Emp{
+            constructor(sal,dept)
+            {
+                super(id,name);
+                this.sal=sal;
+                this.dept=dept;
+            }
+            displayDetail1()
+            {
+                return this.displayDetails();
+                document.write(sal+dept);
+            }
+        }
+        var s1=new Sal(50000,"rnd");
+        s1.displayDetails1();
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
