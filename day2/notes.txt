@@ -1,0 +1,24 @@
+creating user defined obj:
+1) using class:
+SYNTAX:
+class <classname>{
+    constructor(parameters)
+    {
+        this.p1=p1;//p1 and p2  two parametrs 
+        this.p2=p2;
+    }//ctor ends
+    In js class we dont use keyword " function " to create a function we simply 
+    give fun name:
+    displayDetails()
+    {
+        fun body
+    }
+}//class ends
+create imnstance of class
+<classname> ref=new <classname>(parametrs );
+ref.displayDetails();//calling methodswe can also call our properties like p1 and p2
+2)
+creating user defined obj using "Obj Initializer"
+Anthing in js inside '{ }' is an object
+
+var <obj name>={p1:"value",p2:"value"}//thats all our user defined obj is created
