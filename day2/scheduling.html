@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>hello</h1>
+    <script>
+        /*
+            There are two methods for it:
+
+1>setTimeout allows us to run a function once after the interval of time.
+2>setInterval allows us to run a fun repeatedly, starting after the interval of time, 
+then repeating continuously at that interval.
+        SetTIMEOUT:
+SYNTAX:
+let timerId = setTimeout(func|code, [delay], [arg1], [arg2], ...)
+
+
+        */
+        
+        function first(name,roll)
+        {
+            console.log("enterd in fuc");
+            document.write("name is : "+name+" rollno: "+rollno);
+            console.log("end func");
+        }
+     var d=   first("sks",29);
+     alert(d);
+        setTimeout(first,1000,"sks",9206);
+    </script>
+   
+</body>
+</html>
