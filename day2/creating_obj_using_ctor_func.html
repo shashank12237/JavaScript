@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function car(name,model,price)
+        {
+            this.name=name;
+            this.price=price;
+            this.model=model;
+            this.displaycar=displaycar;//we mustadd the display fun even in car fun
+        }
+        function displaycar()
+        {
+            document.write(this.name+" "+this.model+" "+this.price+"<br>");
+        }
+        var c1=new car("fortuner","base",2000000);
+        c1.displaycar();
+    </script>
+</body>
+</html>
