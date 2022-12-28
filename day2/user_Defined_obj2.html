@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        javascript json==>written as obj initializer format
+        json:javascrip obj notation
+        */
+        var person={
+            name:"Shashank",
+            age:27,
+            city:"pune",
+            sal:50000,
+            dispay:function(){
+                document.write(this.name+" "+this.age+" "+this.city+" "+this.sal+"<br>");
+            },
+            increment:function(amount){
+                this.sal+=amount;
+            }
+        }
+       person.dispay();
+       person.increment(5000);
+       person.dispay();
+    </script>
+</body>
+</html>
