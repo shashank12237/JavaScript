@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        /*
+        //using alert
+        function f1()
+        {
+            alert("Hello!! "+document.getElementById("uname").value);
+        }
+        */
+       /*
+        function f1()
+        {
+            var name=document.getElementById("uname").value;
+            document.write("hello "+name);//hello sks
+            //problem with doc.write is it opens a new window or somewhat overwrite 
+            //the present page
+        }
+      */
+      function f1()
+        {
+            var name=document.getElementById("uname").value;//will fetch data of username
+          //  document.getElementById("mydiv").innerHTML+=name;
+            document.getElementById("myspan").innerHTML+=" "+name;
+
+            /*
+            Hello!!!
+              sks
+              o/p comes on next line cz <div> <p> <h> all  r block codes 
+                so they take full screen(i.e entire paragrapj) 
+                so use span tag
+
+            */
+        }
+    </script>
+    <!-- <style>
+        body{
+            align-items: center;
+            border: 5px 
+        }
+    
+    </style> -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome to Event Handling</h1>
+    <form >
+        Username:<input type="text" id="uname" name="u_name"><br><br>
+    <input type="button" value="greet usert" id="btn" name="btn1" onclick="f1()">
+    </form>
+ 
+
+   <!-- Hello!!! <div id="mydiv"></div> -->
+   Hello<span id="myspan"></span>
+</body>
+</html>
