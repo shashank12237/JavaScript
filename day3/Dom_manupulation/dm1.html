@@ -6,6 +6,13 @@
         We r changing the paragraph contents at Run time
         this means the static pgs r convertd into Dynamic at Run Time
         */
+       function change()
+       {
+            document.getElementById("1").innerHTML="Ok Guys....."
+            //we r performing dom manupultn we r selecting the div with id 1 and 
+            //manupultng it or replacing the earlier one by ok guys...
+            document.getElementById("2").innerHTML="That's all fr today....."
+       }
 
     </script>
     <meta charset="UTF-8">
@@ -15,8 +22,8 @@
 </head>
 <body>
     <h2>We r converting the static pg into Dynamic one</h2>
-    <div id="1">Iacsd Welcomes u all .... <br></div>
-    <div id="2">Pg Dac Welcomes u .... <br></div>
+    <div id="1">Iacsd Welcomes u all .... <br></div><br>
+    <div id="2">Pg Dac Welcomes u .... <br></div><br>
     <button type="button" id="btn" name="btn" onclick="change()">Click To change</button>
 </body>
 </html>

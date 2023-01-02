@@ -3,3 +3,8 @@ To take value from user we will use html forms
   Num1 : <input type="text" id="n1" name="num1"><br>
         Num2 : <input type="text" id="n2" name="num2"><br><br>
  </form>
+
+ //to do 
+ at one click content change 
+ at next click older content comes back
+ 
