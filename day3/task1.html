@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function add()
+        {
+            var nu1=parseInt(document.getElementById("n1").value);
+            var nu2=parseInt(document.getElementById("n2").value);
+
+           document.getElementById("btn1").value=nu1+nu2;
+           //it means the 3rd i/p field nd we r setting its value to nu1+nu2
+
+           //Don't do: cz it means we r changing our 3 i/p field value to a int 
+           //it will not give o/p
+           // parseInt(document.getElementById("btn1").value)=nu1+nu2;
+        }
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>We r printing the result in a seprate box not on div</h2>
+    <form > 
+        Num1 : <input type="text" id="n1" name="num1"><br>
+        Num2 : <input type="text" id="n2" name="num2"><br><br>
+        <input type="button" id="btn" name="btn" value="Add" onclick="add()"><br><br>
+       
+    </form>
+    Result : <input type="text" name="btn1" id="btn1" >
+</body>
+</html>
