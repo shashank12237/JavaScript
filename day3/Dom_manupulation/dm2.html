@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        /*
+         Usiong Tagname :
+         by using this we can change the contents of any file by
+         // selecting it via tag name
+         Here we r changimg multiple static contents to Dynamic at single Touch
+        */
+        function Tagchange()
+        {
+            //storing all the div elemts in nodelist named var
+            dlist=document.getElementsByTagName("div");
+            // since we have multiple div so we have to iterate 
+            for(i=0;i<dlist.length;i++)
+            {
+                dlist[i].innerHTML="Ok guys contents r changed";
+            }
+            //Caution: innerHTML<=== use this not innerHtml
+        }
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Changing multiple contents at one time By using Tag</h1>
+    <div> Hello World </div><br>
+    <div> This is JavaScript </div><br>
+    <h2>Oh really the contents of all div r changing</h2>
+    <div>Iacsd Welcomes </div><br>
+    <div> You Guys </div><br>
+    <button type="button" id="btn" name="btn" onclick="Tagchange()">Change Contents</button>
+</body>
+</html>
