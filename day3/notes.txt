@@ -3,6 +3,31 @@ To take value from user we will use html forms
   Num1 : <input type="text" id="n1" name="num1"><br>
         Num2 : <input type="text" id="n2" name="num2"><br><br>
  </form>
+To change contents of multiple lines via getElementById itself:
+    for this we have to keep id of all elements same whom we want to change 
+    at run time.
+    eg:
+    script
+     fun f1()
+     {
+        list=doc.getElementById("c1");
+        for(i=0;i<list.length;i++)
+        {
+            list[i].innerHTML="changed contents "
+        }
+     }
+/script
+
+
+body
+
+<div class="c1"> contents that will be changed </div>
+<h2>............................
+<h1 class="c1">contents that will be changed 
+/body
+
+o/p:
+All the contents of div c1 and h1 c1 will be changed
 
  //to do 
  at one click content change 
