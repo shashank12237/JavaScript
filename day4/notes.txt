@@ -13,3 +13,10 @@ Why we study DOM==>document obj model??
 2 event handling:moving cursor changes color size etc
 3 Dom manupultion:manupultng html contents at run time 
 eg changing static html page into dynamic
+
+//todays topic:
+js: client side validation
+js: reg exp :grep pattern
+json
+ajax
+jquery: breifly 
