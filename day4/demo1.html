@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function f1()
+        {
+            //fetching details or getting value from input terminl
+            name = document.getElementById("ip").value;
+            //crteating instance of emp class  i.e obj cretn
+            var e1= new emp(name);
+            //via ref of obj calling iuts m()
+            e1.displayDetails();
+        }
+        class emp{
+            //ctor
+            constructor(name){
+                this.name=name;
+            }
+            displayDetails()
+            {
+                document.getElementById("myspan").innerHTML="name: "+this.name;
+            }
+        }
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Username : <input type="text" id="ip" name="inp">
+    Click : <input type="button" value="login" id="btn" name="btn" onclick="f1()">
+    <span id="myspan"></span>
+</body>
+</html>
