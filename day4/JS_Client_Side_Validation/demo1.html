@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        #myspan{color: red;}
+    </style>
+    <script>
+        function f1()
+    {
+        
+        var name=document.getElementById("ip").value;
+        /* using if else block fr client side validatn
+            we want :1 name cant be null or empty
+            2 name cant be less than 5 characters
+            3 Since we know once we enterd null or empty in name block or  a name < 5
+            our cursor goes out of  name block But we want our cursr remains 
+            at name bloc if we do something wrong against valiudtn rule
+
+            for this we use focus()
+            4 also i want to select thr previous entrd txt once failed in validtn rules
+            For this we use select() method
+        */
+        if(name==null || name=="")
+        {
+            alert("Name is mandatory ");
+            document.getElementById("ip").focus();
+        }
+        else if(name.length < 5)
+        {
+            alert("Name length cant be less than 5 characters ");
+            document.getElementById("ip").focus();
+            document.getElementById("ip").select();
+        }
+        else
+        document.getElementById("myspan").innerHTML="<br>"+"Hello "+name;
+    }
+    
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Greet User</h1>
+    <form >
+        Name: <input type="text" id="ip" name="inp" >
+
+        <!--Name: <input type="text" id="ip" name="inp" required>
+            <input type="submit" id="btn" name="btn" value="GreetUser" onclick="f1()"
+
+            if we dont input any name then due to required and submit it says 
+            name is required
+            But i doesnt give any mssg if we use required+buton > 
+        Concl: required works with submit fr validtn -->
+    <input type="button" id="btn" name="btn" value="GreetUser" onclick="f1()">
+
+    <span id="myspan"></span>
+    </form>
+    
+
+</body>
+</html>
