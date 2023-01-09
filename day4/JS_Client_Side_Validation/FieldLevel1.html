@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        #s1,#s2{color: red;}
+    </style>
+    <script>
+        function validatename(){
+            var uname = document.getElementById("name").value;
+     
+        //NOT REQUIRED CZ WE R USING 'REQUIRED'WHILE DEFINIG USERNAME INPUT
+    
+       
+       if(uname.length < 5)
+       {
+            document.getElementById("s1").innerHTML="User_Name Length must be greater than 5 letters";
+           docment.getElementById("name").focus();
+           docment.getElementById("name").select();
+        }
+        else if(!isNaN(uname))
+        {
+        document.getElementById("s1").innerHTML="User_Name cant be numeric";
+        docment.getElementById("name").focus();
+           docment.getElementById("name").select();
+        }
+       
+        else
+        document.getElementById("s1").innerHTML=uname;;
+        docment.getElementById("name").focus();
+        docment.getElementById("name").select();
+        }
+        function validatepassword()
+        {
+            var pass = document.getElementById("password").value;
+       if(pass.length < 5 || pass.length > 10)
+       {
+        console.log("inside ist if");
+            document.getElementById("s2").innerHTML="password Length must be greater than 5 letters";
+            docment.getElementById("name").focus();
+           docment.getElementById("name").select();
+        }
+        else if(!isNaN(pass)){
+        document.getElementById("s2").innerHTML="password cant be numeric";
+        docment.getElementById("name").focus();
+           docment.getElementById("name").select();
+        }
+
+        }
+
+        
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form > 
+        <!--The event ONCHANGE="FUNCTION()" will be triggered as son as user tries to tabout that 
+        field and validatn happens -->
+        User_Name : <input type="text" name="ip" id="name" onchange="validatename()"><span id="s1"></span><br><br>
+        Password : <input type="password" name="pas" id="password" onchange="validatepassword()"><span id="s2"></span><br><br>
+        <input type="submit" value="login">
+    </form>
+      
+</body>
+</html>
