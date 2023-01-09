@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        #s1,#s2{color: red;}
+    </style>
+    <script>
+        function validatename(){
+            var name = document.getElementById("name").value;
+     
+        //NOT REQUIRED CZ WE R USING 'REQUIRED'WHILE DEFINIG USERNAME INPUT
+    
+       
+       if(name.length < 5)
+       {
+            document.getElementById("s1").innerHTML="User_Name Length must be greater than 5 letters";
+            return false;
+        }
+        else if(!isNaN(name))
+        {
+        document.getElementById("s1").innerHTML="User_Name cant be numeric";
+        return false;
+        }
+       
+        else
+         return true;
+        }
+        function validatepassword()
+        {
+            var pass = document.getElementById("password").value;
+       if(pass.length < 5 || pass.length > 10)
+       {
+        console.log("inside ist if");
+            document.getElementById("s2").innerHTML="password Length must be greater than 5 letters";
+            return false;
+        }
+        else if(!isNaN(pass)){
+        document.getElementById("s2").innerHTML="password cant be numeric";
+        return false;
+        }
+       
+        else
+         return true;
+
+        }
+
+        function validateform()
+        {
+            if(validatename() && validatepassword())
+             return true;
+
+             else
+             return false;
+        }
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="return validateform()"> 
+        <!--This onsubmit will ensure that before submitting the form call the fnc() i.e validatename()
+            if return of func() is false then it will not submitted to server
+        And if return is True it will ensure that form is submitted successfully-->
+        User_Name : <input type="text" name="ip" id="name" required><span id="s1"></span><br><br>
+        Password : <input type="password" name="pas" id="password" required><span id="s2"></span><br><br>
+        <input type="submit" value="login">
+    </form>
+      
+</body>
+</html>
