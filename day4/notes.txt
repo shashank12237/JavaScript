@@ -22,3 +22,7 @@ ajax
 jquery: breifly 
 
 //onsubmit: its an event;==>Call a function when a form is submitted
+
+validation==>1.FormLevel==whole functions validate when we submit form
+==>2.FieldLevel== functions validate when we tabout from it i.e as soon as we moveout our cursor 
+out of input box it will validate the form
