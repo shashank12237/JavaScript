@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><style>
+    #s1{color: red;}
+    #s2{color: red;}
+</style>
+<script>
+    function f1()
+    {
+        var name = document.getElementById("name").value;
+        if(name==null||name=="")
+        document.getElementById("s1").innerHTML="User_Name is mandatory ";
+        else if(name.length < 5)
+        document.getElementById("s1").innerHTML="User_Name Length must be greater than 5 letters";
+        else if(!isNaN(name))
+        document.getElementById("s1").innerHTML="Use_Name cant be numeric";
+        else
+        document.getElementById("s1").innerHTML=name;
+        /*
+        Requirements of Password:
+        1 pass is mandatory
+        2pass is of 5 to 10 charctrs
+
+        */
+       console.log("reached ")
+        var password=document.getElementById("pass").value;
+        if(password==null||password==""){
+            console.log("reached inside if ")
+            document.getElementById("s2").innerHTML="Password is mandatory ";
+        }
+
+      
+        else if(password.length < 5 || password.length > 10  )
+        document.getElementById("s2").innerHTML="Password Length must be greater than 5 letters and upto 10 letters";
+        // else
+        // document.getElementById("s2").innerHTML=password;
+    }
+    
+</script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form >
+        User_Name : <input type="text" name="ip" id="name"><span id="s1"></span><br><br>
+     
+      <!-- <button type="button" id="btn1" onclick="f1()" >Submit </button>-->
+        
+         Password : <input type="text" name="pas" id="pass" type="password"><span id="s2"></span><br><br>
+      <!-- <button type="button" id="btn2"  onclick="f2()" >Submit </button> --> 
+        <!--Before form is submitted i want to check whether username nd paas r 
+            legitimate set of values or not-->
+            <input type="button" value="Login" onclick="f1()">
+    </form>
+  
+</body>
+</html>
