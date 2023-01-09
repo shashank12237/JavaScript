@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function f1(){
+            var num=document.getElementById("n1").value;
+            if(num == null||num ==""){
+                alert("Enter a number");
+                return false;
+               
+            }
+           
+            else if(num <1 || num > 10){
+                document.getElementById("s1").innerHTML="Enter a number btw 1 to 10 ";
+                return false;
+               
+            }
+            
+            else{
+                return true;
+            }
+           
+           
+        }
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="return f1()">
+        <div> Enter a number between 1 to 10</div><br>
+        <input type="text" id="n1" ><span id="s1">
+        </span><br><br>
+        <button type="button"  onclick="f1()">Submit</button>
+    </form>
+    
+</body>
+</html>
