@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><style>
+    #s1{color: red;}
+    #s2{color: red;}
+</style>
+<script>
+    function f1()
+    {
+        var name = document.getElementById("name").value;
+        if(name==null||name=="")
+        document.getElementById("s1").innerHTML="User_Name is mandatory ";
+        else if(name.length < 5)
+        document.getElementById("s1").innerHTML="User_Name Length must be greater than 5 letters";
+        else if(!isNaN(name))
+        document.getElementById("s1").innerHTML="Use_Name cant be numeric";
+        else
+        document.getElementById("s1").innerHTML=name;
+
+       
+    }
+    function f2()
+    {
+        var password=document.getElementById("pass").value;
+        if(pass==null||pass=="")
+        document.getElementById("s2").innerHTML="Password is mandatory ";
+        else if(password.length < 5)
+        document.getElementById("s2").innerHTML="Password Length must be greater than 5 letters";
+        else
+        document.getElementById("s2").innerHTML=password;
+    }
+  
+</script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    User_Name : <input type="text" name="ip" id="name">
+   <button type="button" id="btn1" value="click" onclick="f1()" >Submit </button>
+   <span id="s1"></span><br><br>
+
+    Password : <input type="text" name="pas" id="pass">
+   <button type="button" id="btn2" value="click" onclick="f2()" >Submit </button>
+   <span id="s2"></span>
+</body>
+</html>
