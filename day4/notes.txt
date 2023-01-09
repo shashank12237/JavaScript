@@ -20,3 +20,5 @@ js: reg exp :grep pattern
 json
 ajax
 jquery: breifly 
+
+//onsubmit: its an event;==>Call a function when a form is submitted
