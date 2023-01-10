@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function zipcode()
+{
+var re=/^\d{6}$/
+var inputval=document.getElementById("inp").value;
+var find=inputval.search(re);
+if(find==-1)
+{
+    console.log("inside if");
+    alert("Enter a valid zip code");
+    
+}
+else
+document.getElementById("mydiv").innerHTML=inputval;
+}       
+ </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="inp" name="ip">
+    <div id="mydiv"> </div>
+    <input type="button" id="btn" name="btn1" onclick="zipcode()" value="check">
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function zip()
+        {
+            var pattern=/^\d{6}$/
+          //  if(document.myform.inp.value.search(pattern)==-1)
+            // console.log("below pattern");
+            // var test=parseInt(getElementsById("inpt").value);
+            // var res;
+            // res=pattern.test(test);
+            // if(res==-1){
+            //     alert("enter a valid zip code");
+               
+            // }
+          
+
+            // else
+            // document.getElementById("s1").innerHTML="correct zip code";
+            //    // console.log("inside if")
+            if(document.myform.inp.value.search(pattern)==-1)
+            alert("enter a valid zip code");
+        }
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="myform">
+        <h1>Zipcode checker</h1>
+        Zipcode : <input type="text" id="inpt" name="inp"  size="15"><span id="s1"></span>
+                    <input type="button" id="btn" name="btn" value="check" onclick="zip()">
+<!--<button type="button" id="btn" value="check" onclick="zip()">check</button>-->
+        
+    </form>
+ 
+   
+</body>
+</html>
