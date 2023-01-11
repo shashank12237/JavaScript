@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .body{ background-color: aqua;}
+         .body1{ background-color: red;}
+         input:focus{background-color: yellow;}
+    </style>
+    <script>
+        var data=[];
+        function add()
+        {
+            function color()
+            {
+                document.getElementById("viva").classList.remove("body");
+                document.getElementById("viva").classList.add("body1");
+
+            }
+            color();
+            console.log("reached add");
+            var user=document.getElementById("ip").value;
+            if(user.length>6)
+            {
+                console.log("reached if of add");
+                alert("name should be less than 6 characters");
+            }
+            var adres=document.getElementById("adr").value;
+            console.log("reached adr"+adres);
+            var hoby=document.getElementById("hobi").value;
+            console.log("reached hoby"+hoby);
+            data=[user,adres,hoby];
+            console.log("reached array"+data);
+        }
+        function dispaly()
+        {
+            
+            function color()
+            {
+                document.getElementById("viva").classList.remove("body1");
+                document.getElementById("viva").classList.add("body");
+
+            }
+            color();
+            console.log("reached display"+data[0]);
+            for(i=0;i<data.length;i++)
+            {console.log("inside loop");
+                document.getElementById("s1").innerHTML+=data[i]+" ";
+            }
+        }
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body class="body" id="viva">
+    <form>
+    Name &nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="ip" name="inp"><br><br>
+    Address <input type="text" id="adr" name="adr" ><br><br>
+    <!-- <label for="adr">Address</label>
+     <textarea id="adr" name="add" rows="5" cols="10"> </textarea><br><br> -->
+     Hobbies <input type="text" id="hobi" name="hobi" ><br><br>
+     <button type="button" id="btn1" name="btn1" onclick="add()" >Add Object</button>&nbsp;&nbsp;&nbsp;&nbsp;
+     <button type="button" id="btn2" name="btn2" onclick="dispaly()">Display Object</button>
+     <span id="s1"></span>
+    </form>
+</body>
+</html>
