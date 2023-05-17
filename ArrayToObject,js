@@ -1,0 +1,6 @@
+function ARRData({
+    
+}
+    
+);
+console.log(ARRData());

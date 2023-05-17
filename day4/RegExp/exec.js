@@ -1,4 +1,4 @@
-var pattern =/java/g;
+var pattern =/java/;
 var str="javascript is a beautiful lang";
 
 var result;
@@ -7,7 +7,7 @@ console.log(result);
 
 /*
 [
-  'java',
+  'java',==
   index: 0,
   input: 'javascript is a beautiful lang',
   groups: undefined
