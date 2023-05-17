@@ -1,0 +1,42 @@
+//open mysql and copy paste:
+-------------------------------------------------------------------------------------------------
+
+alter user 'root'@'localhost' identified with mysql_native_password by 'password';
+create database DBTEST;
+use DBTEST;
+create table Employee(
+Id int primary key,
+Name varchar(100),
+Email varchar(100),
+Address varchar(100),
+Phone varchar(100));
+insert into Employee values(1,'Nikhil','nikhil.solankhi.ns@gmail.com','Rajasthan','123456789');
+insert into Employee values(2,'Tanmay','tanmay@gmail.com','Dholpur','987654321');
+insert into Employee values(3,'Deeksha','deeksha@gmail.com','Jhansi','456798123');
+insert into Employee values(4,'Mayank','mayank@gmail.com','Mumbai','654321987');
+insert into Employee values(5,'Yash','yash@gmail.com','Gujrat','987456321');
+
+-------------------------------------------------------------------------------------------------
+
+//open create a folder and open it with cmd and copypaste:
+
+-------------------------------------------------------------------------------------------------
+dotnet new sln
+dotnet new mvc -o myapp
+dotnet sln add myapp/myapp.csproj
+cd myapp
+dotnet add package Microsoft.EntityFrameworkCore --version 5.0.17
+dotnet add package Microsoft.EntityFrameworkCore.Design --version 5.0.17
+dotnet add package MySql.EntityFrameworkCore --version 5.0.17+MySQL8.0.31
+dotnet tool install --global dotnet-ef
+dotnet ef dbcontext scaffold "server=localhost;user id=root;password=password;database=DBTEST" MySql.EntityFrameworkCore -o Models
+-------------------------------------------------------------------------------------------------
+
+//open program.cs in 
+//1st line write : 
+-------------------------------------------------------------------------------------------------
+	using myapp.Models;
+-------------------------------------------------------------------------------------------------
+6th line write:
+-------------------------------------------------------------------------------------------------
+	builder.Services.AddDbContext<DBTESTContext>();
